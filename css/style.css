@@ -1,0 +1,87 @@
+@import url(utilities.css);
+/*---------------------------
+    RESET 
+---------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------------
+    HEADER 
+---------------------------*/
+header {
+    background-color: #791f1e;
+    text-align: center;
+    height: 3.125rem;
+}
+header #title{
+    color: white;
+    line-height: 3.125rem;
+}
+
+/*---------------------------
+    MAIN 
+---------------------------*/
+main {
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .chess-board{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    border: 20px solid #781c1f;
+    background-color: #781c1f;
+}
+
+main .chess-cell{
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    position: relative;
+    border: 0.5px solid rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .chess-cell img{
+    width: 65px;
+    height: 65px;
+}
+
+main .coords{
+    margin-right: 3px;
+    position: absolute;
+    top: 0px;
+    left: 53px;
+}
+
+/* CELLS BOARD COLOR */
+#b8, #d8, #f8, #h8, 
+#a7, #c7, #e7, #g7,
+#b6, #d6, #f6, #h6,
+#a5, #c5, #e5, #g5,
+#b4, #d4, #f4, #h4,
+#a3, #c3, #e3, #g3,
+#b2, #d2, #f2, #h2,
+#a1, #c1, #e1, #g1{
+    background-color: #b3582c;
+}
+
+#a8, #c8, #e8, #g8, 
+#b7, #d7, #f7, #h7,
+#a6, #c6, #e6, #g6,
+#b5, #d5, #f5, #h5,
+#a4, #c4, #e4, #g4,
+#b3, #d3, #f3, #h3,
+#a2, #c2, #e2, #g2,
+#b1, #d1, #f1, #h1{
+    background-color: #ffe2b8;
+}
+/* /CELLS BOARD COLOR */
+

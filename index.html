@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Vue CDN -->
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Vue CDN -->
+</head>
+<body>
+    <div id='app'>
+        <header>
+            <h1 id="title">Chess Game !</h1>
+        </header>
+
+        <main>
+            <div class="chess-board" :class="isWhiteTurn ? 'wrap' : 'wrap-reverse'">
+                <div class="chess-cell" :id="coord" v-for="coord in chessCoords">
+                    <img v-if="initialGame[coord]" :src="piecesImages[initialGame[coord]]"
+                    :alt="`${initialGame[coord]}-img`"
+                    @click="selectPieces">
+                    <small class="coords">{{ coord }}</small>
+                </div>
+            </div>
+        </main>
+
+        <footer></footer>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

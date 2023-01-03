@@ -1,0 +1,23 @@
+.d-flex{
+    display: flex;
+}
+
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.green-cell{
+    background-color: lightgreen !important;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.cursor-none{
+    cursor: no-drop;
+}
